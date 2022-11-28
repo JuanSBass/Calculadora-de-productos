@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 181px auto 125px auto;
+  margin: 0 auto;
+  width: 1920px;
 }
 
 .header h1 {
@@ -17,4 +18,10 @@
   font-size: 16px;
   line-height: 30px;
   color: #666666;
+}
+
+.cardscontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 38.76px;
 }
