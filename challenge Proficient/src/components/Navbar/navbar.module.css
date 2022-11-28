@@ -1,0 +1,48 @@
+.navcontainer {
+  display: grid;
+  grid-template-columns: 475px 85px 1fr;
+  align-items: center;
+  width: 1920px;
+  height: 196px;
+  background: #fd9255;
+}
+
+.navcontainer a {
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.house {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2/3;
+  position: relative;
+}
+
+.house img {
+  width: 84.88px;
+  height: 88.36px;
+}
+
+#window {
+  position: absolute;
+  width: 22.73px;
+  height: 29.73px;
+  top: 42.5px;
+  left: 49.56px;
+}
+
+.words {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3/4;
+}
+
+.words a {
+  margin: 0 65px 0 65px;
+}
