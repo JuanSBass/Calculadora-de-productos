@@ -5,7 +5,7 @@ import beads from "../../Img/Beads.png";
 import desk from "../../Img/Desk.png";
 import dining from "../../Img/Dining.png";
 import furniture from "../../Img/Furniture.png";
-import oven from "../../Img/Furniture.png";
+import oven from "../../Img/Oven.png"
 import refri from "../../Img/refridegator.png";
 import sofa from "../../Img/Sofa.png";
 import tv from "../../Img/TV.png";
@@ -48,10 +48,6 @@ const arrItems = [
   {
     obj: "Sofa",
     img: sofa
-  },
-  {
-    obj: "Beads",
-    img: beads
   },
   {
     obj: "TV",
