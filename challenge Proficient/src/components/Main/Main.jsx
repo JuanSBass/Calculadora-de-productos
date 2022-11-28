@@ -13,6 +13,7 @@ import wardrobe from "../../Img/Wardrobe.png";
 import washer from "../../Img/Washer.png";
 import { useState } from "react";
 import { Summary } from "./Summary/Summary";
+import { Lateralbuttons } from "./Lateralbuttons/Lateralbuttons";
 
 export const Main = () => {
   const [counter, setCounter] = useState(0);
@@ -37,6 +38,7 @@ export const Main = () => {
           </div>
         ))}
       </section>
+      <Lateralbuttons />
       <Summary />
     </main>
   );

@@ -1,0 +1,31 @@
+.lateralbtnscontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 1256.15px;
+}
+
+#clearbtn {
+  width: 222.21px;
+  height: 61.16px;
+  background: #ffffff;
+  border: 2px solid #fd9255;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #222222;
+}
+
+#calculatebtn {
+  width: 222.21px;
+  height: 61.16px;
+  background: #fd9255;
+  border-radius: 5px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #222222;
+}

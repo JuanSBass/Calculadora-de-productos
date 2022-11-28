@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 38.76px;
-  margin: 120px 0;
+  margin: 120px 0 69px 0;
 }
 
 .countercontainer {
