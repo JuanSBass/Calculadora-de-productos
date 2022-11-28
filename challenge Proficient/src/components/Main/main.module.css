@@ -13,7 +13,7 @@
   color: #06170b;
 }
 
-.header p {
+#textheader {
   width: 453px;
   font-size: 16px;
   line-height: 30px;
@@ -25,4 +25,38 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 38.76px;
   margin: 120px 0;
+}
+
+.countercontainer {
+  display: grid;
+  grid-template-columns: 41.35px 1fr 41.35px;
+  height: 50px;
+  margin: 41px 0;
+}
+
+.leftbutton {
+  background: #e2e2e2;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.rightbutton {
+  background: #e2e2e2;
+  border: 1px solid #e2e2e2;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+}
+
+.number p {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  line-height: 30px;
 }

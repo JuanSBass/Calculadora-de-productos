@@ -1,73 +1,86 @@
-import React from 'react';
-import { CardItem } from './CardItem/CardItem';
+import React from "react";
+import { CardItem } from "./CardItem/CardItem";
 import styles from "./main.module.css";
 import beads from "../../Img/Beads.png";
 import desk from "../../Img/Desk.png";
 import dining from "../../Img/Dining.png";
 import furniture from "../../Img/Furniture.png";
-import oven from "../../Img/Oven.png"
+import oven from "../../Img/Oven.png";
 import refri from "../../Img/refridegator.png";
 import sofa from "../../Img/Sofa.png";
 import tv from "../../Img/TV.png";
 import wardrobe from "../../Img/Wardrobe.png";
 import washer from "../../Img/Washer.png";
+import { useState } from "react";
+import { Summary } from "./Summary/Summary";
 
 export const Main = () => {
+  const [counter, setCounter] = useState(0);
   return (
     <main className={styles.header}>
       <h1>What items to store?</h1>
-      <p>Select which items you wish to store before moving to your new home. We'll keep 'em safe!</p>
+      <p id={styles.textheader}>
+        Select which items you wish to store before moving to your new home.
+        We'll keep 'em safe!
+      </p>
       <section className={styles.cardscontainer}>
-        {
-          arrItems?.map(item => (
-            <CardItem obj={item.obj} img={item.img}/>
-          ))
-        }
+        {arrItems?.map((item) => (
+          <div key={item.obj}>
+            <CardItem obj={item.obj} img={item.img} />
+            <div className={styles.countercontainer}>
+              <button className={styles.leftbutton}>-</button>
+              <div className={styles.number}>
+                <p>{counter}</p>
+              </div>
+              <button className={styles.rightbutton}>+</button>
+            </div>
+          </div>
+        ))}
       </section>
+      <Summary />
     </main>
-  )
-}
+  );
+};
 
 const arrItems = [
   {
     obj: "Beads",
-    img: beads
+    img: beads,
   },
   {
     obj: "Refrigerador",
-    img: refri
+    img: refri,
   },
   {
     obj: "Furniture",
-    img: furniture
+    img: furniture,
   },
   {
     obj: "Oven",
-    img: oven
+    img: oven,
   },
   {
     obj: "Sofa",
-    img: sofa
+    img: sofa,
   },
   {
     obj: "TV",
-    img: tv
+    img: tv,
   },
   {
     obj: "Washer-dryer",
-    img: washer
+    img: washer,
   },
   {
     obj: "Dining",
-    img: dining
+    img: dining,
   },
   {
     obj: "Desk",
-    img: desk
+    img: desk,
   },
   {
     obj: "Wardrobe",
-    img: wardrobe
+    img: wardrobe,
   },
-]
-
+];
