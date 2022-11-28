@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 181px auto 125px auto;
+}
+
+.header h1 {
+  font-size: 48px;
+  line-height: 50px;
+  color: #06170b;
+}
+
+.header p {
+  width: 453px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #666666;
+}
