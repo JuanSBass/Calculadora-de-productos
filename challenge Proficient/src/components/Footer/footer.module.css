@@ -1,0 +1,92 @@
+.footerbox {
+  background: #fd9255;
+  width: 1920px;
+  height: 600px;
+  margin: 750px auto 0 auto;
+}
+
+.footercontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 143px 400px;
+  padding: 130px 0;
+  gap: 130px;
+  color: #fff;
+  position: relative;
+}
+.housefooter {
+  line-height: 30px;
+}
+
+.housefooter p {
+  margin: 20px 0 40px 0;
+  width: 269px;
+}
+
+.pags {
+  display: flex;
+  flex-direction: column;
+}
+
+.pags h2,
+.pagscontact h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 20px 0 56px 0;
+}
+
+.pags a {
+  font-size: 15px;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+#window {
+  position: absolute;
+  left: 4.2%;
+  top: 29%;
+}
+
+.socialicons {
+  display: flex;
+}
+
+.iconcircle {
+  position: relative;
+  margin: 0 16px 0 0;
+}
+
+.icon {
+  position: absolute;
+  top: 20%;
+  right: 22%;
+}
+
+.pagscontact p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+#wapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ffffff;
+  width: 233px;
+  height: 64px;
+  color: #fff;
+  background: #fd9255;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+#wapp span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#iconwapp {
+  width: 39px;
+  height: 39px;
+}
