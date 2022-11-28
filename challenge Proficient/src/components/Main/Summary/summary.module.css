@@ -1,0 +1,31 @@
+.summarycontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 416px;
+  background: #f9f9f9;
+}
+
+.summarycontainer h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: #06170b;
+  width: 407px;
+  height: 81px;
+}
+
+.comandacontainer {
+  display: flex;
+  justify-content: space-around;
+  width: 416px;
+}
+
+.comandacontainer p {
+  line-height: 24px;
+}
+
+.list,
+.resultlist {
+  text-align: start;
+}

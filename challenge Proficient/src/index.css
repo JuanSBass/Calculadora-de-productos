@@ -2,3 +2,7 @@
   font-family: 'Poppins', sans-serif;
   background: #F5F5F5;
 }
+
+button{
+  cursor: pointer;
+}
