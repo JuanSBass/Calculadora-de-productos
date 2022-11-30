@@ -16,7 +16,28 @@ import { Summary } from "./Summary/Summary";
 import { Lateralbuttons } from "./Lateralbuttons/Lateralbuttons";
 
 export const Main = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState({
+    Beads: 0,
+    Refrigerador: 0,
+    Furniture: 0,
+    Oven: 0,
+    Sofa: 0,
+    TV: 0,
+    "Washer-dryer": 0,
+    Dining: 0,
+    Desk: 0,
+    Wardrobe: 0
+  });
+  
+  const countIncrement = (e) => {
+    console.log(e.target.value);
+    setCounter({
+      ...counter,
+      [e.target.value]: counter[e.target.value]+1
+    })
+  };
+  console.log(counter);
+
   return (
     <main className={styles.header}>
       <h1>What items to store?</h1>
@@ -29,11 +50,11 @@ export const Main = () => {
           <div key={item.obj}>
             <CardItem obj={item.obj} img={item.img} />
             <div className={styles.countercontainer}>
-              <button className={styles.leftbutton}>-</button>
-              <div className={styles.number}>
-                <p>{counter}</p>
-              </div>
-              <button className={styles.rightbutton}>+</button>
+              <button className={styles.leftbutton} value={item.obj}>-</button>
+              {/* <div className={styles.number}> */}
+                <input  name={item.obj} className={styles.number} value={counter[item.obj]}/>
+              {/* </div> */}
+              <button className={styles.rightbutton} value={item.obj} onClick={countIncrement}>+</button>
             </div>
           </div>
         ))}
@@ -48,6 +69,7 @@ const arrItems = [
   {
     obj: "Beads",
     img: beads,
+    valor: 0
   },
   {
     obj: "Refrigerador",
